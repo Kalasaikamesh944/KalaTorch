@@ -1,41 +1,43 @@
 # KalaTorch
+# Author : ``` N V R K SAI KAMESH SHARMA ```
+# Install using pip
+``` pip install kalatorch ```
+---
 
-**KalaTorch** is a high-level PyTorch framework designed to simplify the implementation of neural networks and AI models. It provides prebuilt utilities for creating models, managing datasets, and training workflows, making it easier to develop machine learning solutions.
+**KalaTorch** is a high-level PyTorch framework that simplifies the implementation of AI models and neural networks. This framework is designed to help developers quickly build, train, and evaluate machine learning models with minimal boilerplate code.
 
 ---
 
 ## Features
 
-- **Modular Design:** Easily extend and customize for various use cases.
-- **Predefined Architectures:** Includes utilities to create convolutional, recurrent, and transformer models.
-- **Dataset Management:** Simplifies dataset creation and DataLoader configuration.
-- **Trainer Class:** High-level API for training and evaluation workflows.
+- **Predefined Architectures**: Easily create convolutional, recurrent, and transformer-based neural networks.
+- **Dataset Management**: Simplifies dataset creation and loading.
+- **Training Utilities**: High-level APIs for model training and evaluation.
+- **Modular Design**: Extend and customize components for various tasks.
 
 ---
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Kalasaikamesh944/KalaTorch.git
-   cd KalaTorch
-   ```
+Clone the repository and install the required dependencies:
 
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+git clone https://github.com/your-username/KalaTorch.git
+cd KalaTorch
+pip install -r requirements.txt
+```
 
-3. Alternatively, install directly using pip (coming soon):
-   ```bash
-   pip install kalatorch
-   ```
+Or, install directly via pip (coming soon):
+
+```bash
+pip install kalatorch
+```
 
 ---
 
 ## Usage
 
-### Example: Training a Model
+### Example: Training a Convolutional Neural Network
 
 ```python
 import torch
@@ -72,20 +74,20 @@ trainer.evaluate(val_loader)
 
 ---
 
-## Modules and APIs
+## API Reference
 
 ### 1. **Models**
 
 #### `create_convnet(input_channels, num_classes)`
 - Builds a convolutional neural network.
 - **Parameters:**
-  - `input_channels` (int): Number of input channels (e.g., 1 for grayscale, 3 for RGB).
+  - `input_channels` (int): Number of input channels.
   - `num_classes` (int): Number of output classes.
 
 #### `create_recurrent(input_size, hidden_size, num_layers, num_classes)`
 - Builds a recurrent neural network.
 - **Parameters:**
-  - `input_size` (int): Dimensionality of the input features.
+  - `input_size` (int): Dimensionality of input features.
   - `hidden_size` (int): Number of hidden units per layer.
   - `num_layers` (int): Number of RNN layers.
   - `num_classes` (int): Number of output classes.
@@ -98,8 +100,6 @@ trainer.evaluate(val_loader)
   - `num_layers` (int): Number of encoder layers.
   - `num_classes` (int): Number of output classes.
 
----
-
 ### 2. **Datasets**
 
 #### `create_data_loader(data, labels, batch_size=32, shuffle=True)`
@@ -109,8 +109,6 @@ trainer.evaluate(val_loader)
   - `labels` (torch.Tensor): Ground truth labels.
   - `batch_size` (int): Size of each batch (default: 32).
   - `shuffle` (bool): Whether to shuffle the data (default: True).
-
----
 
 ### 3. **Training**
 
@@ -147,30 +145,18 @@ KalaTorch/
 ├── training/                 # Training utilities
 │   ├── __init__.py
 │   ├── trainer.py
-├── utils/                    # Optional 
+├── utils/                    # Optional helper functions
+│   ├── __init__.py
+├── tests/                    # Unit tests
+│   ├── test_trainer.py
 └── train.py                  # Example training script
 ```
 
 ---
 
-## Running Tests
-
-To run unit tests:
-```bash
-python -m unittest discover tests
-```
-
----
-
-## License
-
-KalaTorch is licensed under the MIT License. See the LICENSE file for details.
-
----
-
 ## Contributing
 
-Contributions are welcome! Please follow these steps:
+We welcome contributions! To contribute:
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feature-name`).
 3. Commit your changes (`git commit -m 'Add feature'`).
@@ -179,5 +165,16 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-For more details, visit the [repository](https://github.com/Kalasaikamesh944/KalaTorch.git).
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## Links
+
+- [Documentation](https://github.com/Kalasaikamesh944/KalaTorch#readme)
+- [Issue Tracker](https://github.com/Kalasaikamesh944/KalaTorch/issues)
+- [Source Code](https://github.com/Kalasaikamesh944/KalaTorch)
+- 
 
