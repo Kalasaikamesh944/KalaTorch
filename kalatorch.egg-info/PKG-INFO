@@ -1,3 +1,26 @@
+Metadata-Version: 2.1
+Name: kalatorch
+Version: 0.0.0
+Summary: A high-level PyTorch framework for easy implementation of AI models and neural networks.
+Home-page: https://github.com/Kalasaikamesh944/KalaTorch.git
+Author: N V R K SAI KAMESH YADAVALLI
+Author-email: your_email@example.com
+License: MIT
+Keywords: pytorch ai machine-learning deep-learning neural-networks
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=1.8.0
+Requires-Dist: torchvision>=0.9.0
+
 # KalaTorch
 
 **KalaTorch** is a high-level PyTorch framework designed to simplify the implementation of neural networks and AI models. It provides prebuilt utilities for creating models, managing datasets, and training workflows, making it easier to develop machine learning solutions.
